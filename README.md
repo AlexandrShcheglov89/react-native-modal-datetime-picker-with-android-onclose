@@ -12,7 +12,7 @@ A declarative cross-platform react-native date and time picker.
 
 This library exposes a cross-platform interface for showing the native date-picker and time-picker inside a modal, providing a unified user and developer experience.
 
-Under the hood this library is using [`@react-native-community/datetimepicker`](https://github.com/react-native-community/react-native-datetimepicker).
+Under the hood this library is using [`react-native-datetimepicker-update`](https://github.com/react-native-community/react-native-datetimepicker).
 
 ## Setup (for non-Expo projects)
 
@@ -20,20 +20,20 @@ If your project is not using [Expo](https://expo.io/), install the library and t
 
 ```bash
 # using npm
-$ npm i react-native-modal-datetime-picker @react-native-community/datetimepicker
+$ npm i react-native-modal-datetime-picker react-native-datetimepicker-update
 
 # using yarn
-$ yarn add react-native-modal-datetime-picker @react-native-community/datetimepicker
+$ yarn add react-native-modal-datetime-picker react-native-datetimepicker-update
 ```
 
-Please notice that the `@react-native-community/datetimepicker` package is a native module so [**it might require manual linking**](https://github.com/react-native-community/react-native-datetimepicker#getting-started).
+Please notice that the `react-native-datetimepicker-update` package is a native module so [**it might require manual linking**](https://github.com/react-native-community/react-native-datetimepicker#getting-started).
 
 ## Setup (for Expo projects)
 
 If your project is using [Expo](https://expo.io/), install the library and the community date/time picker using the [Expo CLI](https://docs.expo.io/versions/latest/workflow/expo-cli/):
 
 ```bash
-expo install react-native-modal-datetime-picker @react-native-community/datetimepicker
+expo install react-native-modal-datetime-picker react-native-datetimepicker-update
 ```
 
 ## Usage
@@ -102,8 +102,8 @@ export default Example;
 
 ### The component is not working as expected
 
-Under the hood `react-native-modal-datetime-picker` uses [`@react-native-community/datetimepicker`](https://github.com/react-native-community/react-native-datetimepicker).
-Before reporting a bug, try swapping `react-native-datetime-picker` with [`@react-native-community/datetimepicker`](https://github.com/react-native-community/react-native-datetimepicker) and, if the issue persists, check if it has already been reported as a an issue there.
+Under the hood `react-native-modal-datetime-picker` uses [`react-native-datetimepicker-update`](https://github.com/react-native-community/react-native-datetimepicker).
+Before reporting a bug, try swapping `react-native-datetime-picker` with [`react-native-datetimepicker-update`](https://github.com/react-native-community/react-native-datetimepicker) and, if the issue persists, check if it has already been reported as a an issue there.
 
 ### How can I show the timepicker instead of the datepicker?
 
@@ -116,7 +116,7 @@ Please make sure you're using the `date` props (and not the `value` one).
 
 ### The picker shows up twice on Android
 
-This seems to be a known issue of the [`@react-native-community/datetimepicker`](https://github.com/react-native-community/datetimepicker/issues/54). Please see [this thread](https://github.com/react-native-community/datetimepicker/issues/54) for a couple of workarounds.  
+This seems to be a known issue of the [`react-native-datetimepicker-update`](https://github.com/react-native-community/datetimepicker/issues/54). Please see [this thread](https://github.com/react-native-community/datetimepicker/issues/54) for a couple of workarounds.  
 
 ### How do I change the color of the Android date and time pickers?
 

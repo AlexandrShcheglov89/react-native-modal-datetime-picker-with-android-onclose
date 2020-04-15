@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import DateTimePicker from "@react-native-community/datetimepicker";
+import DateTimePicker from "react-native-datetimepicker-update";
 
 export class DateTimePickerModal extends React.PureComponent {
   static propTypes = {

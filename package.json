@@ -46,7 +46,7 @@
     "semantic-release": "^16.0.2"
   },
   "peerDependencies": {
-    "@react-native-community/datetimepicker": ">=1.0.0"
+    "react-native-datetimepicker-update": ">=1.0.0"
   },
   "husky": {
     "hooks": {
