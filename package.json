@@ -1,5 +1,5 @@
 {
-  "name": "react-native-modal-datetime-picker",
+  "name": "react-native-modal-datetime-picker-with-android-onclose",
   "version": "8.5.4",
   "description": "A react-native datetime-picker for Android and iOS",
   "main": "src/index.js",
@@ -20,10 +20,10 @@
   ],
   "author": "Mazzarolo Matteo",
   "license": "MIT",
-  "homepage": "https://github.com/mmazzarolo/react-native-modal-datetime-picker",
+  "homepage": "https://github.com/AlexandrShcheglov89/react-native-modal-datetime-picker-with-android-onclose.git",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mmazzarolo/react-native-modal-datetime-picker"
+    "url": "https://github.com/AlexandrShcheglov89/react-native-modal-datetime-picker-with-android-onclose.git"
   },
   "scripts": {
     "lint": "eslint src",
