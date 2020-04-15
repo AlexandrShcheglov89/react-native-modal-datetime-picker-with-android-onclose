@@ -26,10 +26,8 @@ export class DateTimePickerModal extends React.PureComponent {
   currentDate = this.props.date;
 
   static getDerivedStateFromProps(props, state) {
-    if (props.isVisible && state.currentMode === null) {
+    if (state.currentMode === null) {
       return { currentMode: props.mode === "time" ? "time" : "date" };
-    } else if (!props.isVisible) {
-      return { currentMode: null };
     }
     return null;
   }
@@ -61,16 +59,18 @@ export class DateTimePickerModal extends React.PureComponent {
   };
 
   render() {
-    const { isVisible, date, ...otherProps } = this.props;
+    const { date, ...otherProps } = this.props;
     const { currentMode } = this.state;
-    if (!isVisible || !currentMode) return null;
+    if (!currentMode) {
+      return null
+    };
     return (
       <DateTimePicker
-        {...otherProps}
-        mode={currentMode}
-        value={date}
-        onChange={this.handleChange}
-      />
-    );
+          {...otherProps}
+          mode={currentMode}
+          value={date}
+          onChange={this.handleChange}
+        />
+    )
   }
 }
